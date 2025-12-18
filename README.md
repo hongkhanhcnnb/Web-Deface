@@ -74,19 +74,7 @@ Hệ thống gồm các thành phần chính:
 
 ### Lưu ý: Cần xóa hết tất cả file trong folder 'data' trước khi thực hiện các bước chạy chương trình.
 
-### Bước 1: Chạy File Integrity Monitor
-
-Mở một terminal và chạy:
-
-```bash
-python collector/file_integrity_log.py
-```
-
-Chương trình sẽ theo dõi file `data/web/index.html` và ghi log khi có thay đổi.
-
----
-
-### Bước 2: Chạy Web Server
+### Bước 1: Chạy Web Server
 
 Mở terminal khác:
 
@@ -95,6 +83,18 @@ python simulator/web_server.py
 ```
 
 Web server sẽ chạy tại địa chỉ `http://127.0.0.1:5000`.
+
+---
+
+### Bước 2: Chạy File Integrity Monitor
+
+Mở một terminal và chạy:
+
+```bash
+python collector/file_integrity_log.py
+```
+
+Chương trình sẽ theo dõi file `data/web/index.html` và ghi log khi có thay đổi.
 
 ---
 
