@@ -16,7 +16,7 @@ ATTACKER_IP = "10.10.10.10"
 headers = {"X-Forwarded-For": ATTACKER_IP}
 
 def main():
-    for i in range(00):
+    for i in range(200):
         q = random.choice(payloads)
         try:
             requests.get(BASE + "/danger?q=" + q, headers=headers, timeout=1)

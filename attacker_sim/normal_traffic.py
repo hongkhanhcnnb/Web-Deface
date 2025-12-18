@@ -4,22 +4,18 @@ import random
 
 BASE = "http://127.0.0.1:5000"
 
-paths = [
-    "/", "/about", "/contact",
-    "/news", "/products", "/blog",
-    "/assets/logo.png", "/static/main.css",
-]
+paths = ["/"]
 
 def main():
-    for i in range(4000):
+    for i in range(3000):
         p = random.choice(paths)
         try:
             requests.get(BASE + p, timeout=1)
         except:
             pass
 
-        if i % 400 == 0:
-            print(f"[NORMAL] {i}/4000")
+        if i % 200 == 0:
+            print(f"[NORMAL] {i}/3000")
 
         time.sleep(0.003)
 

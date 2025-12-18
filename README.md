@@ -72,6 +72,8 @@ Hệ thống gồm các thành phần chính:
 
 ## 3. Cách chạy đồ án
 
+### Lưu ý: Cần xóa hết tất cả file trong folder 'data' trước khi thực hiện các bước chạy chương trình.
+
 ### Bước 1: Chạy File Integrity Monitor
 
 Mở một terminal và chạy:

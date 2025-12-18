@@ -31,7 +31,7 @@ def index():
     return open(INDEX_FILE).read()
 
 # Endpoint search (hành vi nghi vấn)
-@app.route("/search")
+@app.route("/danger")
 def search():
     q = request.args.get("q", "")
     log_request("suspicious")

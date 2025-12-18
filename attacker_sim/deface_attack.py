@@ -5,23 +5,23 @@ import random
 BASE = "http://127.0.0.1:5000"
 
 recon_paths = [
-    "/search?q=scan",
-    "/search?q=../../etc/passwd",
-    "/search?q=<script>",
-    "/search?q=SELECT+1"
+    "/danger?q=scan",
+    "/danger?q=../../etc/passwd",
+    "/danger?q=<script>",
+    "/danger?q=SELECT+1"
 ]
 
 probe_paths = [
-    "/search?q=upload_test",
-    "/search?q=file_check",
-    "/search?q=edit_index"
+    "/danger?q=upload_test",
+    "/danger?q=file_check",
+    "/danger?q=edit_index"
 ]
 
 ATTACKER_IP = "10.10.10.10"
 headers = {"X-Forwarded-For": ATTACKER_IP}
 
 def main():
-    for attack_id in range(100):
+    for attack_id in range(200):
 
         # Phase 1 — Reconnaissance
         for _ in range(3):
